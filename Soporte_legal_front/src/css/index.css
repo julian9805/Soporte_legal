@@ -1,0 +1,28 @@
+/* header */
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li{
+  list-style-type: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.header{
+  width: 100%;
+  background-color: gray;
+  height: 80px;
+}
+
+/* footer */
+
+.footer{
+  background-color: gray;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

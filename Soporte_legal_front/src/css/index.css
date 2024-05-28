@@ -1,28 +1,102 @@
-/* header */
+/* Estilos generales */
+main{
+  overflow: hidden;
+}
 
-.header-container{
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101332db; /* Color de fondo global */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header, footer, main {
+  background-color: #101332db; /* Color de fondo consistente */
+  color: white; /* Ajuste de color de texto para mejor contraste */
+}
+
+/* header */
+.header-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-li{
+li {
   list-style-type: none;
   font-size: 20px;
   margin-top: 10px;
 }
 
-.header{
+.nav-bar {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
   width: 100%;
-  background-color: gray;
   height: 80px;
 }
 
-/* footer */
+.title-header {
+  font-size: 40px;
+  color: goldenrod;
+}
 
-.footer{
-  background-color: gray;
+/* main/home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Hace que el main ocupe el espacio restante */
+  padding: 20px;
+  text-align: center;
+}
+
+.image-home{
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.title-home h1 {
+  font-size: 35px;
+  margin-top: 230px;
+  color: goldenrod;
+}
+
+button {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* footer */
+.footer {
   width: 100%;
-  position: fixed;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  color: white;
   bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.footer-icons .social-icon {
+  color: white;
+}
+
+.footer-container .location-icon {
+  color: white;
 }

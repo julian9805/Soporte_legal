@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
 import Header from "../Header";
-import "./_home.scss";
 
 function Home(){
 
@@ -11,15 +10,11 @@ function Home(){
         <section className="home-container">
             <div className="title-home">
                 <h1>DECUBRE Y CONOCE COMO TRABAJAMOS</h1>
+                <img className="image-home" src="../../../../public/images/balanza-1.jpg"/>
                 <Link to={"/contact"}>
                     <button>Contactanos</button>
                 </Link>
-                
-
-            </div>
-            <div className="image-home">
-                <img src="../../../../public/images/238413007889dc266eeadcdb49a5e8dd.jpg"/>
-            </div>
+             </div>
         </section>
         <Footer/>
         </>

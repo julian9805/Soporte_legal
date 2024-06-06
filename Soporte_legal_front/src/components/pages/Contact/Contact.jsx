@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import Header from "../Header";
+import "./Contact.scss";
 
 
 function Contact(){
@@ -8,7 +9,7 @@ function Contact(){
     return(
         <>
             <Header/>
-            <section>
+            <section className="contact-container">
                 <div>
                     <h2>CONTACTANOS</h2>
                 </div>

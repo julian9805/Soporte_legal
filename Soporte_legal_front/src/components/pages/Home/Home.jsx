@@ -7,18 +7,21 @@ function Home(){
 
     return(
         <>
-        <Header/>
-        <section className="home-container">
-            <div className="title-home">
-                <h1>DECUBRE Y CONOCE COMO TRABAJAMOS</h1>
-            </div>
-            <img className="image-home" src="../../../../public/images/logo.png"/>
-            <Link to={"/contact"}>
-                <button>Contactanos</button>
-            </Link>
-             
-        </section>
-        <Footer/>
+            <Header/>
+                <main>
+                 
+                    <section className="home-container">
+                        <div className="title-home">
+                            <h1>DECUBRE Y CONOCE COMO TRABAJAMOS</h1>
+                        </div>
+                        
+                        <Link to={"/contact"}>
+                            <button>Contactanos</button>
+                        </Link>
+                        
+                    </section>
+                </main>
+            <Footer/>
         </>
     )
 }

@@ -1,37 +1,43 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
+import { CiPhone, CiMail } from "react-icons/ci";
 
 function Footer() {
     return (
-        <section className="footer">
+        <footer className="footer">
             <div className="footer-icons">
-                <p>Soporte Legal</p>
-                <ul className="icons">
-                    <li>
+                <h3>Puede contactarnos en nuestras redes sociales</h3>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
                         <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaFacebook />
                         </a>
                     </li>
-                    <li>
+                    <li className="nav-item">
                         <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaInstagram />
                         </a>
                     </li>
                 </ul>
+                <p>© 2024 Soporte Legal, Paseo de la Castellana 142</p> 
             </div>
             <div className="footer-container">
                 <h3>Información de contacto</h3>
-                <SlLocationPin className="location-icon" />
-                <p>Paseo de la Castellana 142</p>
+                <div className="icon-component">
+                    <CiPhone />
+                    <a href="tel:+34653552048">653552048</a>
+                </div>
+                <div className="icon-component">
+                    <CiPhone />
+                    <a href="tel:+34911234567">911234567</a>
+                </div>
+                <div className="icon-component">
+                    <CiMail />
+                    <a href="mailto:soportelegal615@gmail.com">soportelegal615@gmail.com</a>
+                </div>
+                
             </div>
-            <div>
-                <p>653552048</p>
-                <p>911234567</p>
-            </div>
-            <div>
-                <p>Soportelegal615@gmail.com</p>
-            </div>
-        </section>
+        </footer>
     );
 }
 

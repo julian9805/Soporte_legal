@@ -3,12 +3,7 @@
 
 
 .work-container {
-    padding: 40px;
-    max-width: 800px;
     margin: 40px auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .work-title {
@@ -16,25 +11,56 @@
     margin-bottom: 20px;
 }
 
-.work-title h3 {
+.work-title h2 {
     color: #007bff;
     font-size: 24px;
 }
 
 .work-list {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    position: relative;
+    width: 100vw;
+    background-image: url(../../../../public/images/corbata.jpg);
+    background-size: cover;
+    align-items: flex-end;
+    .item{
+        padding: 50px;
+        height: 600px;
+        display: block;
+        &::after{
+            content: "";
+            display: block;
+            width: 100vw;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    #civil{
+        &:hover{
+            background-image: url(../../../../public/images/tim-gouw-bwki71ap-y8-unsplash.jpg);
+            background-size: cover;
+        }
+    }
+    
+}
+
+.work-list h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    z-index: 5;
 }
 
 .work-list p {
-    font-weight: bold;
-    color: #333;
-    font-size: 20px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 5;
 }
 
-.work-list span {
-    color: #555;
-    font-size: 16px;
-    margin-left: 20px;
-}
+
+

@@ -4,6 +4,7 @@
 
 .work-container {
     margin: 40px auto;
+    overflow: hidden;
 }
 
 .work-title {
@@ -23,26 +24,26 @@
     background-image: url(../../../../public/images/corbata.jpg);
     background-size: cover;
     align-items: flex-end;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
     .item{
         padding: 50px;
         height: 600px;
-        display: block;
-        &::after{
-            content: "";
-            display: block;
-            width: 100vw;
-            height: 600px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        transition: 0.2s;
+        overflow: hidden;
     }
-    #civil{
-        &:hover{
-            background-image: url(../../../../public/images/tim-gouw-bwki71ap-y8-unsplash.jpg);
-            background-size: cover;
-        }
+    &:has(.item#civil:hover) {
+        background-image: url(../../../../public/images/giammarco-boscaro-eWpBNXRHfTI-unsplash.jpg);
+    }
+    &:has(.item#penal:hover) {
+        background-image: url(../../../../public/images/corbata.jpg);
+    }
+    &:has(.item#laboral:hover) {
+        background-image: url(../../../../public/images/tim-gouw-bwki71ap-y8-unsplash.jpg);
     }
     
 }

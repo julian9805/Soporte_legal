@@ -7,7 +7,6 @@ function About(){
 
     return(
         <>
-            <Header/>
             <section className="about-container">
                 <h2>Quienes somos</h2>
                 <p>
@@ -20,7 +19,6 @@ function About(){
                     Solicite ahora una revisión de caso y reciba una respuesta inmediata por parte de nuestro equipo que se encargara de estudiar su caso y ponerlo en manos del mejor profesional. 
                 </p>
             </section>
-            <Footer/>
         </>
     )
 }

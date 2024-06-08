@@ -8,7 +8,6 @@ function Contact(){
 
     return(
         <>
-            <Header/>
             <section className="contact-container">
                 <div>
                     <h2>CONTACTANOS</h2>
@@ -33,7 +32,6 @@ function Contact(){
                     <button className="form-btn" type="submit">Enviar</button>
                 </form>
             </section>
-            <Footer/>
         </>
     )
 }

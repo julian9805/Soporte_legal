@@ -7,7 +7,6 @@ function Work(){
 
     return(
         <> 
-            <Header/>
             <section className="work-container">
                 <div className="work-title">
                     <h3>RAMAS DEL DERECHO:</h3>
@@ -21,7 +20,6 @@ function Work(){
                     <span>Temas legales que involucren empleados y empleadores (Indemnizaciones, despidos, contratación, sindicatos, etc.)</span>
                 </div>
             </section>
-            <Footer/>
         </>
     )
 }

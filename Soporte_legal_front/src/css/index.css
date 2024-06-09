@@ -16,6 +16,11 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
 }
 
 #root {
@@ -41,6 +46,8 @@ header, footer {
 .nav-bar {
   text-decoration: none;
   color: white;
+  
+  
 }
 
 .navbar-nav{
@@ -61,6 +68,7 @@ header, footer {
 .nav-item a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav-item a .icon-home {
@@ -81,6 +89,11 @@ button {
   margin-top: 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
 }
 
 /****************** footer ***********************/

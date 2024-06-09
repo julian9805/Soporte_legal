@@ -1,15 +1,28 @@
 
 /* Contact.scss */
 
+.contact-container{
+    background-color: #a5a5a5;
+    display: flex;
+    padding: 50px;
+    gap: 50px;
 
+}
 
-.contact-container {
+.image-girls{
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-container {
     padding: 20px;
     max-width: 600px;
-    margin: 40px auto;
     background-color: #ffffff;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .contact-container div h2 {
@@ -56,13 +69,15 @@ textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color:  #be8143;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 200px;
+    
 }
 
 .form-btn:hover {
-    background-color: #0056b3;
+    background-color: #885c30;
 }

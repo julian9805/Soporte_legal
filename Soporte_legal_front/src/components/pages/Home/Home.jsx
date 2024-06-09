@@ -13,12 +13,12 @@ function Home(){
             <Header/>
                 <main>
                  
-                    <section className="home-container">
+                    <section id="home" className="home-container">
                         <div className="banner-home">
                             <div className="content-banner">
                                 <h1>Resolvemos tu caso legal en un clic. Confía en nuestro equipo experto hoy.</h1>
                                 <Link to={"/contact"}>
-                                    <button>Contactanos</button>
+                                    <button className="home-button">Contactanos</button>
                                 </Link>
 
                             </div>

@@ -5,8 +5,15 @@
   background-image: url(../../../../public/images/giammarco-boscaro-eWpBNXRHfTI-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
-
+.home-button{
+  background-color: #be8143;
+  color: #FFF;
+  &:hover {
+    background-color: #885c30;
+}
+}
 
 .banner-home{
   width: 100vw;
@@ -15,7 +22,8 @@
   align-items: center;
   padding: 16px;
   max-width: 1500px;
-    margin: 0 auto;
+  margin: 0 auto;
+  
   .content-banner {
     max-width: 500px;
     h1 {

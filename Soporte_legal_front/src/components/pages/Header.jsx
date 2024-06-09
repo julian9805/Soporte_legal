@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { Link } from "react-scroll"; 
 
 
 function Header(){
@@ -15,24 +16,24 @@ function Header(){
                         </li>
 
                         <li className={"nav-item"}>
-                            <Link to={"/"}>
+                            <Link to="home" smooth={true} duration={500}>
                                 Inicio
                             </Link>
                         </li>
 
                         <li className={"nav-item"}>
-                            <Link to={"/about"}>
+                            <Link to="about" smooth={true} duration={500}>
                                 Quienes somos
                             </Link>
                         </li>
                         
                         <li className={"nav-item"}>
-                            <Link to={"/work"} >
+                            <Link to="work" smooth={true} duration={500}>
                                 Como trabajamos
                             </Link>
                         </li>
                         <li className={"nav-item"}>
-                            <Link to={"/contact"}>
+                            <Link to="contact" smooth={true} duration={500}>
                                 Contacto
                             </Link>
                         </li>

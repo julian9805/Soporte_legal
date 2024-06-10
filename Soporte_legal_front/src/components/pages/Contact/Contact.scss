@@ -81,3 +81,16 @@ textarea {
 .form-btn:hover {
     background-color: #885c30;
 }
+
+@media (max-width: 768px){
+    .image-girls{
+        display: none;
+    }
+}
+
+@media (max-width: 750px){
+    .contact-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

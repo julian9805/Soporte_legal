@@ -85,5 +85,15 @@
     z-index: 5;
 }
 
+@media (max-width: 750px){
+   .work-list{
+    display: flex;
+    flex-direction: column;
+   }
+   .work-list .item{
+    padding: 30px;
+   }
+}
+
 
 

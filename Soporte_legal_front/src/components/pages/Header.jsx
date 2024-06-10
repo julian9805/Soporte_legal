@@ -1,8 +1,16 @@
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
 import { Link } from "react-scroll"; 
 
 
 function Header(){
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
 
     return(
         <header>
@@ -15,29 +23,32 @@ function Header(){
                             </Link>
                         </li>
 
-                        <li className={"nav-item"}>
+                        <li id="hambur-menu" className={"nav-item"}>
                             <Link to="home" smooth={true} duration={500}>
                                 Inicio
                             </Link>
                         </li>
 
-                        <li className={"nav-item"}>
+                        <li id="hambur-menu" className={"nav-item"}>
                             <Link to="about" smooth={true} duration={500}>
                                 Quienes somos
                             </Link>
                         </li>
                         
-                        <li className={"nav-item"}>
+                        <li id="hambur-menu" className={"nav-item"}>
                             <Link to="work" smooth={true} duration={500}>
                                 Como trabajamos
                             </Link>
                         </li>
-                        <li className={"nav-item"}>
+                        <li id="hambur-menu" className={"nav-item"}>
                             <Link to="contact" smooth={true} duration={500}>
                                 Contacto
                             </Link>
                         </li>
                     </ul>
+                    <div className="menu_togle" onClick={toggleMenu}>
+                        <RxHamburgerMenu />
+                    </div>
                 </div>
             </nav>
         </header>

@@ -32,7 +32,7 @@ function Contact(){
                         <button className="form-btn" type="submit">Enviar</button>
                     </form>
                 </div>
-                <img className="image-girls" src="../../../../public/images/vince-fleming-9PIfZHcnrjQ-unsplash.jpg"/>
+                <img className="image-girls" src="../../../../public/images/chicas.jpg"/>
             </section>
         </>
     )

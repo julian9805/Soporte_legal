@@ -10,16 +10,17 @@
   --color-7: #cacaca;
 }
 
-main{
-  overflow: hidden;
-}
 
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #1f2139db; /* Color de fondo global */
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
 }
 
 #root {
@@ -45,6 +46,8 @@ header, footer {
 .nav-bar {
   text-decoration: none;
   color: white;
+  
+  
 }
 
 .navbar-nav{
@@ -65,6 +68,7 @@ header, footer {
 .nav-item a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav-item a .icon-home {
@@ -79,48 +83,17 @@ header, footer {
   height: 80px;
 }
 
-.title-header {
-  font-size: 40px;
-  color: goldenrod;
-  cursor: default;
-}
-
-/* main/home */
-
-main {
-  min-height: 70vh;
-}
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1; /* Hace que el main ocupe el espacio restante */
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 350px;
-}
-
-.image-home{
-  width: 300px;
-  height: auto;
-  margin-top: 20px;
-  background-color: transparent;
-}
-
-.title-home h1 {
-  font-size: 35px;
-  margin-top: 230px;
-  color: goldenrod;
-  cursor: default;
-}
 
 button {
   padding: 15px;
   margin-top: 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
 }
 
 /****************** footer ***********************/
